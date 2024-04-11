@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <!-- завдання 1 -->
+    <div class="container">
+      <label for="field1">поле 1:</label>
+      <input id="field1" type="text" />
+
+      <label for="field2">поле 2:</label>
+      <input id="field2" type="text" />
+
+      <button class="button" onclick="Fields()">перевірити поля</button>
+
+      <div id="message-field"></div>
+    </div>
+    <!-- завдання 2-->
+    <div class="container">
+      <label for="number1">число 1: </label>
+      <input id="number1" type="number" />
+
+      <label for="number2">число 2:</label>
+      <input id="number2" type="number" />
+
+      <button onclick="Sum()">перевірити поля</button>
+
+      <div id="messageSum"></div>
+    </div>
+
+    <!-- завдання 3 -->
+    <div class="container">
+      <label for="textInput">Введіть текст:</label>
+      <input type="text" id="textInput" />
+
+      <button onclick="Text()">Перевірити текст</button>
+
+      <div id="messageText"></div>
+    </div>
+    <!-- завдання 4-->
+    <div class="container">
+      <form id="form">
+        <label for="numberInput">Введіть число:</label>
+        <input type="numberInput" id="numberInput" required />
+        <button type="submit">перевірити</button>
+      </form>
+      <div id="numberMessage"></div>
+    </div>
+    <!-- завдання 5-->
+    <form id="Form">
+        
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" required minlength="3" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required minlength="6">
+
+      <button type="button" onclick="Form()">Відправити</button>
+
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
